@@ -1,62 +1,60 @@
-@eu-mouz: -0px -0px 48px 20px;
-@default: -0px -20px 48px 20px;
-@cn-dk: -0px -40px 48px 20px;
-@cn-ehome: -0px -60px 48px 20px;
-@cn-ep: -0px -80px 48px 20px;
-@cn-hgt: -0px -100px 48px 20px;
-@cn-ig: -0px -120px 48px 20px;
-@cn-lgd: -0px -140px 48px 20px;
-@cn-newbee-y: -0px -160px 48px 20px;
-@cn-newbee: -0px -180px 48px 20px;
-@cn-speed: -0px -200px 48px 20px;
-@cn-tongfu-wz: -0px -220px 48px 20px;
-@cn-tongfu: -0px -240px 48px 20px;
-@cn-vg-p: -0px -260px 48px 20px;
-@cn-vg: -0px -280px 48px 20px;
-@cn-wings: -0px -300px 48px 20px;
-@eu-all: -0px -320px 48px 20px;
-@eu-bears: -0px -340px 48px 20px;
-@eu-burden: -0px -360px 48px 20px;
-@eu-c9: -0px -380px 48px 20px;
-@eu-empire: -0px -400px 48px 20px;
-@eu-hr: -0px -420px 48px 20px;
-@eu-ldnc: -0px -440px 48px 20px;
-@eu-m5: -0px -460px 48px 20px;
-@cn-cdec: -0px -480px 48px 20px;
-@eu-myi: -0px -500px 48px 20px;
-@eu-mym: -0px -520px 48px 20px;
-@eu-navi: -0px -540px 48px 20px;
-@eu-nip: -0px -560px 48px 20px;
-@eu-rangers: -0px -580px 48px 20px;
-@eu-secret: -0px -600px 48px 20px;
-@eu-vega: -0px -620px 48px 20px;
-@eu-vp: -0px -640px 48px 20px;
-@legacy-biggod: -0px -660px 48px 20px;
-@legacy-rave: -0px -680px 48px 20px;
-@legacy-tinker: -0px -700px 48px 20px;
-@na-archon: -0px -720px 48px 20px;
-@na-col: -0px -740px 48px 20px;
-@na-eg: -0px -760px 48px 20px;
-@na-lev: -0px -780px 48px 20px;
-@na-not: -0px -800px 48px 20px;
-@na-rift: -0px -820px 48px 20px;
-@na-root: -0px -840px 48px 20px;
-@na-unk: -0px -860px 48px 20px;
-@sea-fnc: -0px -880px 48px 20px;
-@sea-mineski: -0px -900px 48px 20px;
-@sea-mvp: -0px -920px 48px 20px;
-@sea-st: -0px -940px 48px 20px;
+@kinguin: -0px -0px 48px 20px;
+@3sup: -0px -20px 48px 20px;
+@c9: -0px -40px 48px 20px;
+@clg: -0px -60px 48px 20px;
+@col: -0px -80px 48px 20px;
+@conq: -0px -100px 48px 20px;
+@default: -0px -120px 48px 20px;
+@dig: -0px -140px 48px 20px;
+@ebettle: -0px -160px 48px 20px;
+@el: -0px -180px 48px 20px;
+@env: -0px -200px 48px 20px;
+@f3: -0px -220px 48px 20px;
+@fe: -0px -240px 48px 20px;
+@fenix: -0px -260px 48px 20px;
+@fnc: -0px -280px 48px 20px;
+@g2: -0px -300px 48px 20px;
+@gplay: -0px -320px 48px 20px;
+@hr: -0px -340px 48px 20px;
+@im: -0px -360px 48px 20px;
+@inshock: -0px -380px 48px 20px;
+@keyd: -0px -400px 48px 20px;
+@ace: -0px -420px 48px 20px;
+@ldlc: -0px -440px 48px 20px;
+@ls: -0px -460px 48px 20px;
+@method: -0px -480px 48px 20px;
+@mouz: -0px -500px 48px 20px;
+@myth: -0px -520px 48px 20px;
+@navi: -0px -540px 48px 20px;
+@nip: -0px -560px 48px 20px;
+@nme: -0px -580px 48px 20px;
+@penta: -0px -600px 48px 20px;
+@piter: -0px -620px 48px 20px;
+@rng: -0px -640px 48px 20px;
+@sk: -0px -660px 48px 20px;
+@spaz: -0px -680px 48px 20px;
+@tempo: -0px -700px 48px 20px;
+@titan: -0px -720px 48px 20px;
+@tl: -0px -740px 48px 20px;
+@tsm: -0px -760px 48px 20px;
+@vp: -0px -780px 48px 20px;
+@wfx: -0px -800px 48px 20px;
+@x6: -0px -820px 48px 20px;
+
 .sprite-width(@sprite) {
   width: extract(@sprite, 3);
 }
+
 .sprite-height(@sprite) {
   height: extract(@sprite, 4);
 }
+
 .sprite-position(@sprite) {
   @sprite-offset-x: extract(@sprite, 1);
   @sprite-offset-y: extract(@sprite, 2);
   background-position: @sprite-offset-x @sprite-offset-y;
 }
+
 .sprite(@sprite, @display: block) {
   .sprite-position(@sprite);
   background-repeat: no-repeat;
@@ -65,6 +63,7 @@
   .sprite-width(@sprite);
   .sprite-height(@sprite);
 }
+
 .icon {
   background-image: url("../images/teams.png");
 }

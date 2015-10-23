@@ -1,28 +1,50 @@
 @import (reference) "thumb-sprites.less";
-
 .self .thumbnail {
-  width: 100px;
-  height: 70px;
-  padding: 0;
-  background: url(%%thumbnails%%) no-repeat;
-  .sprite-position(@dv);
+	width: 100px;
+	height: 70px;
+	padding: 0;
+	background: url(%%thumbnails%%) no-repeat;
+	.sprite-position(@csgo)!important;
 }
-
-.self .thumbnail[href*="summit_3"]{
-	.sprite-position(@summit)!important;
+.self .thumbnail[href*="gfinity"] {
+	.sprite-position(@gfinity)!important;
 }
-.self .thumbnail[href*="international_5"]{
- 	.sprite-position(@ti5)!important;
+.self .thumbnail[href*="dreamhack"] {
+	.sprite-position(@dreamhack)!important;
 }
-.self .thumbnail[href*="esl_one"]{
+.self .thumbnail[href*="esl-one"] {
 	.sprite-position(@esl-one)!important;
 }
-.self .thumbnail[href*="dota_2_asia_championships"]{
-	.sprite-position(@dac)!important;
+.self .thumbnail[href*="esl"] {
+	.sprite-position(@esl)!important;
 }
-.self .thumbnail[href*="nxtgame"]{
-	.sprite-position(@nxtgame)!important;
+.self .thumbnail[href*="eswc"] {
+	.sprite-position(@eswc)!important;
 }
-.self .thumbnail[href*="asia_arena"]{
-	.sprite-position(@asia-arena)!important;
+.self .thumbnail[href*="faceit"] {
+	.sprite-position(@faceit)!important;
+}
+.self .thumbnail[href*="fragbite"] {
+	.sprite-position(@fragbite)!important;
+}
+.self .thumbnail[href*="esea"] {
+	.sprite-position(@esea)!important;
+}
+.self .thumbnail[href*="htc"] {
+	.sprite-position(@htc)!important;
+}
+.self .thumbnail[href*="iem"] {
+	.sprite-position(@iem)!important;
+}
+.self .thumbnail[href*="nanyang"] {
+	.sprite-position(@nanyang)!important;
+}
+.self .thumbnail[href*="pgl"] {
+	.sprite-position(@pgl)!important;
+}
+.self .thumbnail[href*="starladder"] {
+	.sprite-position(@starladder)!important;
+}
+.self .thumbnail[href*="winout"] {
+	.sprite-position(@winout)!important;
 }

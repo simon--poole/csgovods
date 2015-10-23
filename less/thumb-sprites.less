@@ -1,21 +1,33 @@
-@asia-arena: -0px -0px 100px 70px;
-@dac: -0px -70px 100px 70px;
-@dv: -0px -140px 100px 70px;
+@fragbite: -0px -0px 100px 70px;
+@csgo: -0px -70px 100px 70px;
+@esea: -0px -140px 100px 70px;
 @esl-one: -0px -210px 100px 70px;
-@nxtgame: -0px -280px 100px 70px;
-@summit: -0px -350px 100px 70px;
-@ti5: -0px -420px 100px 70px;
+@esl: -0px -280px 100px 70px;
+@eswc: -0px -350px 100px 70px;
+@faceit: -0px -420px 100px 70px;
+@dreamhack: -0px -490px 100px 70px;
+@gfinity: -0px -560px 100px 70px;
+@htc: -0px -630px 100px 70px;
+@iem: -0px -700px 100px 70px;
+@nanyang: -0px -770px 100px 70px;
+@pgl: -0px -840px 100px 70px;
+@starladder: -0px -910px 100px 70px;
+@winout: -0px -980px 100px 70px;
+
 .sprite-width(@sprite) {
   width: extract(@sprite, 3);
 }
+
 .sprite-height(@sprite) {
   height: extract(@sprite, 4);
 }
+
 .sprite-position(@sprite) {
   @sprite-offset-x: extract(@sprite, 1);
   @sprite-offset-y: extract(@sprite, 2);
   background-position: @sprite-offset-x @sprite-offset-y;
 }
+
 .sprite(@sprite, @display: block) {
   .sprite-position(@sprite);
   background-repeat: no-repeat;
@@ -24,6 +36,7 @@
   .sprite-width(@sprite);
   .sprite-height(@sprite);
 }
+
 .icon {
   background-image: url("../images/thumbnails.png");
 }
