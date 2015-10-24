@@ -1,10 +1,13 @@
 /* Visited links color change */
 
 .entry {
-	a:visited {
-		color: #551a8b;
-		&[href*="cs.eventvods.com"] {
-			color: #0079d3!important;
+	a {
+		color: #0079d3!important;
+		&:visited {
+			color: #551a8b!important;
+			&[href*="cs.eventvods.com"] {
+				color: #0079d3!important;
+			}
 		}
 	}
 }
