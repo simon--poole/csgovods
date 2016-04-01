@@ -2,6 +2,36 @@
 @postflair-height: -20px;
 @slide-time: 0.3s;
 
+/* Users */
+
+.flair {
+	background: transparent;
+	border: 0;
+	
+	&:before {
+		content: "";
+		background: url(%%user-flairs%%) transparent;
+		display: inline-block;
+		border: 0;
+		padding: 0;
+		width: 21px;
+		height: 21px;
+		vertical-align: middle;
+	}
+	&-dev:before {
+		background-position: -5px -6px;
+	}
+	&-staff:before {
+		background-position: -5px -37px;
+	}
+	&-donator:before {
+		background-position: -5px -68px;
+	}
+	&-updater:before {
+		background-position: -5px -98px;
+	}
+}
+
 /* Links */
 
 .linkflairlabel {
