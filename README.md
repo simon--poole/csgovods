@@ -1,13 +1,13 @@
 # dotavods
 
-This repository contains a collection of CSS customizations for EventVODS' dotavods.
+This repository contains a collection of CSS customizations for EventVODS' csgovods.
 It is derived from the LolEventVods css collection.
 
 ## Downloading
 
 To download the respository, simply clone the repository.
 
-	git clone https://github.com/simon--poole/dotavods
+	git clone https://github.com/simon--poole/csgovods
 
 ## Setting up dev environment
 
@@ -24,6 +24,7 @@ You can quickly regenerate sprites files using
 
 This updates the `images/teams.png` file and the `less/team-sprites.less` file.
 You'll also need to update the `teams.less` file to include any additional sprites.
+The same applies to `images/thumbnails.png`, `less/thumbnail-sprites.less` and `thumbnails.less`.
 
 ## Building the source
 Building the source is extremely simple - simply run
