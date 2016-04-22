@@ -1,59 +1,73 @@
 @ldlc: -0px -0px 48px 20px;
 @3sup: -0px -20px 48px 20px;
-@c9: -0px -40px 48px 20px;
-@clg: -0px -60px 48px 20px;
-@col: -0px -80px 48px 20px;
-@conq: -0px -100px 48px 20px;
-@default: -0px -120px 48px 20px;
-@dig: -0px -140px 48px 20px;
-@ebettle: -0px -160px 48px 20px;
-@el: -0px -180px 48px 20px;
-@env: -0px -200px 48px 20px;
-@f3: -0px -220px 48px 20px;
-@fe: -0px -240px 48px 20px;
-@fenix: -0px -260px 48px 20px;
-@fnc: -0px -280px 48px 20px;
-@g2: -0px -300px 48px 20px;
-@gplay: -0px -320px 48px 20px;
-@hr: -0px -340px 48px 20px;
-@im: -0px -360px 48px 20px;
-@inshock: -0px -380px 48px 20px;
-@keyd: -0px -400px 48px 20px;
-@kinguin: -0px -420px 48px 20px;
-@ace: -0px -440px 48px 20px;
-@ls: -0px -460px 48px 20px;
-@method: -0px -480px 48px 20px;
-@mouz: -0px -500px 48px 20px;
-@myth: -0px -520px 48px 20px;
-@navi: -0px -540px 48px 20px;
-@nip: -0px -560px 48px 20px;
-@nme: -0px -580px 48px 20px;
-@penta: -0px -600px 48px 20px;
-@piter: -0px -620px 48px 20px;
-@rng: -0px -640px 48px 20px;
-@sk: -0px -660px 48px 20px;
-@skdc: -0px -680px 48px 20px;
-@spaz: -0px -700px 48px 20px;
-@tempo: -0px -720px 48px 20px;
-@titan: -0px -740px 48px 20px;
-@tl: -0px -760px 48px 20px;
-@tsm: -0px -780px 48px 20px;
-@vexed: -0px -800px 48px 20px;
-@vp: -0px -820px 48px 20px;
-@wfx: -0px -840px 48px 20px;
-@x6: -0px -860px 48px 20px;
+@agg: -0px -40px 48px 20px;
+@ast: -0px -60px 48px 20px;
+@c9: -0px -80px 48px 20px;
+@clg: -0px -100px 48px 20px;
+@col: -0px -120px 48px 20px;
+@conq: -0px -140px 48px 20px;
+@default: -0px -160px 48px 20px;
+@dig: -0px -180px 48px 20px;
+@ebettle: -0px -200px 48px 20px;
+@efx: -0px -220px 48px 20px;
+@el: -0px -240px 48px 20px;
+@env: -0px -260px 48px 20px;
+@f3: -0px -280px 48px 20px;
+@faze: -0px -300px 48px 20px;
+@fe: -0px -320px 48px 20px;
+@fenix: -0px -340px 48px 20px;
+@fnc: -0px -360px 48px 20px;
+@g2: -0px -380px 48px 20px;
+@gambit: -0px -400px 48px 20px;
+@gplay: -0px -420px 48px 20px;
+@hr: -0px -440px 48px 20px;
+@im: -0px -460px 48px 20px;
+@inshock: -0px -480px 48px 20px;
+@keyd: -0px -500px 48px 20px;
+@kinguin: -0px -520px 48px 20px;
+@ace: -0px -540px 48px 20px;
+@ls: -0px -560px 48px 20px;
+@method: -0px -580px 48px 20px;
+@mouz: -0px -600px 48px 20px;
+@myth: -0px -620px 48px 20px;
+@navi: -0px -640px 48px 20px;
+@nip: -0px -660px 48px 20px;
+@nme: -0px -680px 48px 20px;
+@nrg: -0px -700px 48px 20px;
+@og: -0px -720px 48px 20px;
+@penta: -0px -740px 48px 20px;
+@piter: -0px -760px 48px 20px;
+@rng: -0px -780px 48px 20px;
+@self: -0px -800px 48px 20px;
+@sk: -0px -820px 48px 20px;
+@skdc: -0px -840px 48px 20px;
+@spaz: -0px -860px 48px 20px;
+@spy: -0px -880px 48px 20px;
+@tempo: -0px -900px 48px 20px;
+@titan: -0px -920px 48px 20px;
+@tl: -0px -940px 48px 20px;
+@tsm: -0px -960px 48px 20px;
+@tyloo: -0px -980px 48px 20px;
+@vexed: -0px -1000px 48px 20px;
+@vp: -0px -1020px 48px 20px;
+@wfx: -0px -1040px 48px 20px;
+@x6: -0px -1060px 48px 20px;
+
 .sprite-width(@sprite) {
   width: extract(@sprite, 3);
 }
+
 .sprite-height(@sprite) {
   height: extract(@sprite, 4);
 }
+
 .sprite-position(@sprite) {
   @sprite-offset-x: extract(@sprite, 1);
   @sprite-offset-y: extract(@sprite, 2);
   background-position: @sprite-offset-x @sprite-offset-y;
 }
-.sprite(@sprite, @display: block) {
+
+.sprite(@sprite, @display:block) {
   .sprite-position(@sprite);
   background-repeat: no-repeat;
   overflow: hidden;
@@ -61,6 +75,7 @@
   .sprite-width(@sprite);
   .sprite-height(@sprite);
 }
+
 .icon {
   background-image: url('../images/teams.png');
 }
