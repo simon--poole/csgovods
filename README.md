@@ -1,4 +1,4 @@
-# dotavods
+# csgovods
 
 This repository contains a collection of CSS customizations for EventVODS' csgovods.
 It is derived from the LolEventVods css collection.
