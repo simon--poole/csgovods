@@ -1,17 +1,19 @@
 @import (reference) "team-sprites.less";
 .wiki a[href^="#"]:after,
 .usertext-body a[href^="#"]:after {
-	content: "";
-	width: 48px;
-	height: 20px;
-	background: url(%%teams%%) no-repeat transparent;
-	display: inline-block;
-	vertical-align: middle;
-	cursor: default!important;
-	.sprite-position(@default);
+  content:"";
+  width: 48px;
+  height: 20px;
+  background: url(%%teams%%) no-repeat transparent;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default!important;
+  .sprite-position(@default);
+  text-align: center;
 }
-.wiki .toc a[href^="#"]:after {
-	display: none;
+.wiki .toc a[href^="#"]:after,
+a.voteWeight[href^="#"]:after {
+  display: none!important;
 }
 a[href="#ldlc"]:after {
 	.sprite-position(@ldlc)!important;
