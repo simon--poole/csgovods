@@ -1,10 +1,13 @@
 @import (reference) "thumb-sprites.less";
-.self .thumbnail {
+.self .thumbnail, .thumbnail {
+	background: url(%%thumbnails%%) no-repeat;
 	width: 100px;
 	height: 70px;
 	padding: 0;
-	background: url(%%thumbnails%%) no-repeat;
 	.sprite-position(@csgo)!important;
+	> img {
+		display: none;
+	}
 }
 .self .thumbnail[href*="counterpit"] {
 	.sprite-position(@counterpit)!important;
