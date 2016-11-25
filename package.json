@@ -22,5 +22,8 @@
     "sprity-less": "*",
     "gulp-gm": "*",
     "gulp-image-optimization": "*"
+  },
+  "dependencies": {
+    "sprity-gm": "^1.0.2"
   }
 }
